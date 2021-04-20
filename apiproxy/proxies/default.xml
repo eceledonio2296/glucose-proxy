@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProxyEndpoint name="default">
     <PreFlow name="PreFlow">
-        <Request/>
+        <Request>
+            <Step>
+                <Name>AM-AddContentTypeHeader</Name>
+            </Step>
+        </Request>
         <Response/>
     </PreFlow>
     <Flows>
@@ -16,6 +20,24 @@
             <Request/>
             <Response/>
             <Condition>(proxy.pathsuffix MatchesPath "/hello/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getEgvs">
+            <Description>Show egvs by range</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/egvs/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getCalibrations">
+            <Description>Show calibrations by range</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/calibrations/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="getDevices">
+            <Description>Show devices by range</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/devices/*") and (request.verb = "GET")</Condition>
         </Flow>
     </Flows>
     <PostFlow name="PostFlow">
