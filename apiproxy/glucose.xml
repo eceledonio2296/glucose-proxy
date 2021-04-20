@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="glucose">
+    <Basepaths>/glucose/v1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1618866359536</CreatedAt>
+    <CreatedBy>eceledonio@nearbpo.com</CreatedBy>
+    <Description>Proxy for glucose data</Description>
+    <DisplayName>glucose</DisplayName>
+    <LastModifiedAt>1618874091912</LastModifiedAt>
+    <LastModifiedBy>eceledonio@nearbpo.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:ad2b442aca32c940843d6ae25053863f7040a1bde19fe090405cbc7869167ee944bbd29aa9778d6f712e9f8815a6d51c6ffa0d8f24801994708ec42654822c81:us-east-1</ManifestVersion>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
